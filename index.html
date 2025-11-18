@@ -1,0 +1,563 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio de Saaqkk</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas class="bg-canvas" id="bg-canvas"></canvas>
+    <header class="hero" id="inicio">
+      <div class="hero__content">
+        <p class="eyebrow">Desarrollador &amp; Diseñador</p>
+        <h1>
+          Hola, soy <span class="accent">Saaqkk</span>
+          <br />
+          Cuento historias digitales llenas de energía y movimiento.
+        </h1>
+        <p>
+          Explorador incansable del motion design, las interfaces inmersivas y
+          las experiencias humanas. Amo prototipar en Astro y SvelteKit para que
+          cada scroll responda con precisión artesanal.
+        </p>
+        <div class="hero__chips">
+          <span>Astro Islands</span>
+          <span>Realtime UX</span>
+          <span>Design Systems</span>
+        </div>
+        <div class="hero__cta">
+          <a href="#historia" class="btn">Ver mi historia</a>
+          <a href="#contacto" class="btn btn--ghost">Hablemos</a>
+        </div>
+        <div class="hero__status" id="discord-status">
+          <div class="status__indicator"></div>
+          <div>
+            <p class="status__label">Discord</p>
+            <p class="status__value">Conectando…</p>
+          </div>
+        </div>
+      </div>
+      <div class="hero__image">
+        <div class="floating-card">
+          <img
+            src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80"
+            alt="Setup creativo"
+          />
+          <p>Creando futuros interactivos desde 2016.</p>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section metrics" id="impacto">
+        <div class="section__header">
+          <p class="eyebrow">Impacto</p>
+          <h2>Telemetría creativa</h2>
+          <p>
+            Experimentos que viven en la nube: despliegues en Astro, API
+            reactivas y una obsesión por el performance que mantiene cada
+            transición suave.
+          </p>
+        </div>
+        <div class="metrics__grid">
+          <article class="metric">
+            <p class="metric__value" data-target="128">0</p>
+            <p class="metric__label">Interacciones diseñadas este año</p>
+          </article>
+          <article class="metric">
+            <p class="metric__value" data-target="42">0</p>
+            <p class="metric__label">Experimentos WebGL + WebAudio</p>
+          </article>
+          <article class="metric">
+            <p class="metric__value" data-target="24">0</p>
+            <p class="metric__label">Communities activas en Discord</p>
+          </article>
+          <article class="metric">
+            <p class="metric__value" data-target="5">0</p>
+            <p class="metric__label">Launches Astro por trimestre</p>
+          </article>
+        </div>
+        <div class="metrics__panel">
+          <div class="progress-card" data-progress="92">
+            <header>
+              <p>Optimización en Astro</p>
+              <span>92%</span>
+            </header>
+            <div class="progress">
+              <div class="progress__fill"></div>
+            </div>
+            <p class="progress__note">
+              SSR híbrido, islas interactivas y streaming.
+            </p>
+          </div>
+          <div class="progress-card" data-progress="87">
+            <header>
+              <p>Motion Systems</p>
+              <span>87%</span>
+            </header>
+            <div class="progress">
+              <div class="progress__fill"></div>
+            </div>
+            <p class="progress__note">
+              Coreografías con GSAP, Framer Motion y WebGL.
+            </p>
+          </div>
+          <div class="progress-card" data-progress="76">
+            <header>
+              <p>Realtime Layer</p>
+              <span>76%</span>
+            </header>
+            <div class="progress">
+              <div class="progress__fill"></div>
+            </div>
+            <p class="progress__note">
+              WebSockets, Lanyard y métricas en vivo.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--split" id="stack">
+        <div class="section__header">
+          <p class="eyebrow">Toolkit</p>
+          <h2>Stack favorito para experiencias sensibles</h2>
+          <p>
+            Diseño cada detalle como si fuera un componente de Astro: ligero,
+            modular y con espacio para animaciones exuberantes.
+          </p>
+        </div>
+        <div class="stack-grid">
+          <article class="stack-card stack-card--astro">
+            <h3>Astro</h3>
+            <p>Render híbrido, islas interactivas y routing flexible.</p>
+            <ul>
+              <li>SSR/SSG mixto</li>
+              <li>MDX + contenido dinámico</li>
+              <li>Integraciones Tailwind / GSAP</li>
+            </ul>
+          </article>
+          <article class="stack-card">
+            <h3>SvelteKit &amp; Vite</h3>
+            <p>Prototipos ultra rápidos con transiciones nativas.</p>
+            <ul>
+              <li>Stores reactivos</li>
+              <li>Form actions</li>
+              <li>Streaming data</li>
+            </ul>
+          </article>
+          <article class="stack-card">
+            <h3>Three.js / WebGPU</h3>
+            <p>Escenas 3D suaves con post-procesos rosados.</p>
+            <ul>
+              <li>Sombras suaves</li>
+              <li>Shader toy</li>
+              <li>Instancias optimizadas</li>
+            </ul>
+          </article>
+          <article class="stack-card">
+            <h3>Supabase &amp; Edge</h3>
+            <p>Datos en tiempo real para overlays y dashboards.</p>
+            <ul>
+              <li>Auth mágico</li>
+              <li>Row level security</li>
+              <li>Funciones edge</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <div class="ticker" aria-hidden="true">
+        <div class="ticker__inner">
+          <span>Astro + Motion</span>
+          <span>Glassmorphism</span>
+          <span>Realtime Discord</span>
+          <span>IA generativa</span>
+          <span>Diseño táctil</span>
+          <span>WebGPU Labs</span>
+        </div>
+      </div>
+
+      <section class="section" id="historia">
+        <div class="section__header">
+          <p class="eyebrow">Historia</p>
+          <h2>Una línea de tiempo hecha de píxeles y sueños</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline__item">
+            <span class="timeline__year">2016</span>
+            <h3>Primeras incursiones</h3>
+            <p>
+              Descubrí el motion graphics y lo combiné con mis estudios de
+              programación para crear animaciones responsivas.
+            </p>
+          </article>
+          <article class="timeline__item">
+            <span class="timeline__year">2019</span>
+            <h3>Colaboraciones internacionales</h3>
+            <p>
+              Freelance con marcas emergentes, mezclando ilustración, audio y
+              WebGL para micro sitios llenos de vida.
+            </p>
+          </article>
+          <article class="timeline__item">
+            <span class="timeline__year">2021</span>
+            <h3>Experiencias inmersivas</h3>
+            <p>
+              Lideré la creación de experiencias interactivas para comunidades
+              tech en Discord, Twitch y eventos híbridos.
+            </p>
+          </article>
+          <article class="timeline__item">
+            <span class="timeline__year">2024</span>
+            <h3>Futuro cercano</h3>
+            <p>
+              Estoy construyendo herramientas que conectan datos en tiempo real
+              con interfaces sensibles y fluidas.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="experimentos">
+        <div class="section__header">
+          <p class="eyebrow">Laboratorio</p>
+          <h2>Experimentos que vibra el estudio</h2>
+          <p>
+            Hago pruebas con partículas, IA generativa y sensores físicos para
+            narrar historias. Cada tarjeta es un sandbox listo para evolucionar
+            en un proyecto real.
+          </p>
+        </div>
+        <div class="lab-grid">
+          <article class="lab-card">
+            <header>
+              <p>Neon Storyteller</p>
+              <span>WebGL + Astro</span>
+            </header>
+            <p>
+              Micro sitio donde el scroll escribe una novela visual con campos
+              magnéticos y partículas rosas.
+            </p>
+            <ul>
+              <li>Shader fragmentado</li>
+              <li>Captura de audio reactiva</li>
+              <li>Exportación a vídeo</li>
+            </ul>
+          </article>
+          <article class="lab-card">
+            <header>
+              <p>Presence Hub</p>
+              <span>Supabase</span>
+            </header>
+            <p>
+              Tablero donde conecto Discord, Notion y Twitch para seguir la
+              energía de la comunidad en vivo.
+            </p>
+            <ul>
+              <li>WebSockets compartidos</li>
+              <li>Acciones serverless</li>
+              <li>Alertas tipo overlay</li>
+            </ul>
+          </article>
+          <article class="lab-card">
+            <header>
+              <p>Touch Synth</p>
+              <span>Hardware</span>
+            </header>
+            <p>
+              Controlador físico construido con Arduino que dispara loops
+              visuales y audio espacial.
+            </p>
+            <ul>
+              <li>Sensores capacitivos</li>
+              <li>OSC + MIDI</li>
+              <li>Visuales generativos</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--glass manifesto" id="manifesto">
+        <div class="section__header">
+          <p class="eyebrow">Manifiesto</p>
+          <h2>Principios que guían cada proyecto</h2>
+        </div>
+        <ul class="manifesto__list">
+          <li>
+            <strong>Movimiento útil.</strong> Cada animación tiene un propósito:
+            explicar, emocionar o guiar.
+          </li>
+          <li>
+            <strong>Realtime todo.</strong> Desde Discord a sensores, todo dato
+            merece un stream vivo.
+          </li>
+          <li>
+            <strong>Accesibilidad cromática.</strong> Contrastes fuertes entre
+            negro, rojo y rosa.
+          </li>
+          <li>
+            <strong>Stack transparente.</strong> Prefiero Astro, pero me adapto
+            al flujo que tu producto necesite.
+          </li>
+        </ul>
+      </section>
+
+      <section class="section section--split" id="galeria">
+        <div class="section__header">
+          <p class="eyebrow">Galería</p>
+          <h2>Instantes capturados</h2>
+          <p>
+            Cada pieza es una cápsula de energía. Usa el scroll para activar las
+            transiciones suaves y sentir la vibra del estudio creativo.
+          </p>
+        </div>
+        <div class="gallery">
+          <div class="gallery__item">
+            <img
+              src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=800&q=80"
+              alt="Consola de audio"
+            />
+            <p>Beats y colores sincronizados.</p>
+          </div>
+          <div class="gallery__item">
+            <img
+              src="https://images.unsplash.com/photo-1487611459768-bd414656ea10?auto=format&fit=crop&w=800&q=80"
+              alt="Código"
+            />
+            <p>Código que fluye como música.</p>
+          </div>
+          <div class="gallery__item">
+            <img
+              src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80"
+              alt="Estudio"
+            />
+            <p>Espacios que inspiran ideas.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section newsletter" id="newsletter">
+        <div class="section__header">
+          <p class="eyebrow">Broadcast</p>
+          <h2>Bitácora rosa</h2>
+          <p>
+            Envío cada mes recursos, presets de animación y plantillas Astro
+            para la comunidad.
+          </p>
+        </div>
+        <form class="newsletter__form">
+          <input type="email" placeholder="tu@correo.com" required />
+          <button type="submit" class="btn">Quiero recibirlo</button>
+        </form>
+        <p class="newsletter__note">
+          No spam. Solo energía creativa y prototipos.
+        </p>
+      </section>
+
+      <section class="section" id="discord">
+        <div class="section__header">
+          <p class="eyebrow">Discord Live</p>
+          <h2>Status en tiempo real</h2>
+          <p>
+            Con la API de <strong>Lanyard</strong> me conecto directamente a mi
+            actividad en Discord. Presencia, juego actual, insignias e intereses
+            aparecen aquí sin refrescar la página.
+          </p>
+        </div>
+        <div class="status-grid">
+          <div class="status-card">
+            <h3>Estado</h3>
+            <p id="presence-text">Cargando...</p>
+          </div>
+          <div class="status-card">
+            <h3>Actividad</h3>
+            <p id="activity-text">---</p>
+          </div>
+          <div class="status-card">
+            <h3>Insignias</h3>
+            <ul id="badges-list"></ul>
+          </div>
+          <div class="status-card">
+            <h3>Conexión</h3>
+            <p id="last-updated">Esperando datos</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--glass" id="contacto">
+        <div class="section__header">
+          <p class="eyebrow">Contacto</p>
+          <h2>Colaboremos</h2>
+          <p>
+            ¿Tienes un reto creativo? Respondo rápido en Discord y correo. Cada
+            proyecto es una oportunidad para experimentar con nuevas
+            animaciones.
+          </p>
+        </div>
+        <form class="contact-form">
+          <label>
+            Nombre
+            <input type="text" placeholder="Tu nombre" required />
+          </label>
+          <label>
+            Email
+            <input type="email" placeholder="hola@ejemplo.com" required />
+          </label>
+          <label>
+            Mensaje
+            <textarea placeholder="Cuéntame sobre tu idea" rows="4"></textarea>
+          </label>
+          <button type="submit" class="btn">Enviar mensaje</button>
+        </form>
+      </section>
+
+      <section class="section collaborators" id="colaboraciones">
+        <div class="section__header">
+          <p class="eyebrow">Aliados</p>
+          <h2>Personas y marcas que amplifican la vibra</h2>
+          <p>
+            Me conecto con estudios boutique, artistas audiovisuales y startups
+            que apuestan por experiencias interactivas. Aquí algunas voces que
+            inspiran el laboratorio de Saaqkk.
+          </p>
+        </div>
+        <div class="collab-grid">
+          <article class="collab-card">
+            <h3>Studio Lumen</h3>
+            <p>
+              "El enfoque híbrido Astro + WebGL nos permitió lanzar un lobby
+              virtual en dos semanas."
+            </p>
+            <span>Productora XR — Madrid</span>
+          </article>
+          <article class="collab-card">
+            <h3>Neon Garden</h3>
+            <p>
+              "Saaqkk hizo que nuestro stream en Twitch sintiera latidos reales
+              con overlays reactivos."
+            </p>
+            <span>Collective musical — CDMX</span>
+          </article>
+          <article class="collab-card">
+            <h3>Orbital</h3>
+            <p>
+              "Integramos telemetría y presencia social para un dashboard que
+              enamora inversionistas."
+            </p>
+            <span>Startup SaaS — Buenos Aires</span>
+          </article>
+        </div>
+        <div class="collab__logos">
+          <span>▲ Aster</span>
+          <span>✹ Prism Lab</span>
+          <span>∞ Modulor</span>
+          <span>◐ Flux Lab</span>
+        </div>
+      </section>
+
+      <section class="section section--split setup" id="setup">
+        <div class="section__header">
+          <p class="eyebrow">Setup</p>
+          <h2>Pipeline técnico y ritual creativo</h2>
+          <p>
+            Desde el hardware hasta los rituales nocturnos, cada elemento está
+            pensado para sostener sesiones largas de diseño y streaming.
+          </p>
+        </div>
+        <div class="setup__grid">
+          <article class="setup__card">
+            <h3>Hardware</h3>
+            <ul>
+              <li>MacBook Pro M3 Max / 64 GB RAM</li>
+              <li>RTX 4080 eGPU para pruebas WebGPU</li>
+              <li>Akai MPC One + Ableton Push</li>
+              <li>Stream Deck XL con macros Astro</li>
+            </ul>
+          </article>
+          <article class="setup__card">
+            <h3>Software</h3>
+            <ul>
+              <li>Astro, SvelteKit y Vite para prototipos</li>
+              <li>Blender + After Effects para motion</li>
+              <li>Notion + Raycast + Cron para focus</li>
+              <li>Supabase Studio para realtime</li>
+            </ul>
+          </article>
+          <article class="setup__card">
+            <h3>Rituales</h3>
+            <ul>
+              <li>Sessions nocturnas con playlists synthwave</li>
+              <li>Revisiones en vivo vía Discord Stage</li>
+              <li>Retrospectiva dominical con la comunidad</li>
+              <li>Sketching analógico antes de prototipar</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section faq" id="faq">
+        <div class="section__header">
+          <p class="eyebrow">FAQ</p>
+          <h2>Preguntas frecuentes</h2>
+          <p>
+            Si tienes curiosidad sobre la colaboración, aquí respondo las dudas
+            más comunes antes de abrir un canal en Discord.
+          </p>
+        </div>
+        <div class="faq__list">
+          <article class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              ¿Puedes trabajar con mi stack actual?
+              <span class="faq__icon">+</span>
+            </button>
+            <div class="faq__answer">
+              Claro. Aunque amo Astro, también colaboro con Next.js, Nuxt o
+              infra personalizada. Lo importante es mantener la capa de motion y
+              realtime impecable.
+            </div>
+          </article>
+          <article class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              ¿Cómo es el proceso de discovery?
+              <span class="faq__icon">+</span>
+            </button>
+            <div class="faq__answer">
+              Iniciamos con una llamada de 30 minutos, luego envío un board de
+              referencias y prototipo navegable en menos de 5 días.
+            </div>
+          </article>
+          <article class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              ¿Ofreces mentorship o workshops?
+              <span class="faq__icon">+</span>
+            </button>
+            <div class="faq__answer">
+              Sí, tengo sesiones mensuales de mentorship enfocadas en motion y
+              sistemas de diseño para equipos pequeños.
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>
+        © <span id="year"></span> Saaqkk — Diseñando interacciones sensibles.
+      </p>
+      <div class="footer__links">
+        <a href="#inicio">Inicio</a>
+        <a href="#historia">Historia</a>
+        <a href="#discord">Discord</a>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
